@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <h1 align="center">Drop down Task Project</h1>
+    </head>  
+    <body>
+        <!-- <button>list of Countries and States</button> -->
+        <select id="Select">
+          
+            <option>America</option>
+            <option>Africa</option>
+            <option>Bihar</option>
+            <option>Bengurlu</option>
+            <option>Canada</option>
+            <option>India</option>
+            <option>Island</option>
+            <option>Iran</option>
+            <option>Japan</option>
+            <option>Jharkand</option>
+            <option>Russia</option>
+            <option>Europe</option>
+            <option>England</option>
+            <option>USA</option>
+    </select>
+        <!-- <button>Search Elements</button> -->
+        <input type="text" placeholder="Search Elements"/>
+        <button onclick="myFunction()">Click</button>
+    </body>  
+    <script>
+        function myFunction(){
+            
+            console.log("Function is running");
+            selectElements=document.getElementById("Select");
+            //>selectElement.value;
+            selectElement.options[selectElement.selectedIndex].value
+        }
+
+       //> var i;
+        // var Elements=["America","Africa","Bihar","Bengurlu","Canada","India","Iran","Japan","Jharkand","Russia","Europe","England","USA"]
+        // for(Elements[i];Elements[i]<length.Elements;Elements[i]++){
+        //         if (i){
+
+        //         }
+        // }
+        
+    </script>
+</html>
