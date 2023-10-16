@@ -6,20 +6,20 @@
         <!-- <button>list of Countries and States</button> -->
         <select id="Select">
           
-            <option>America</option>
-            <option>Africa</option>
-            <option>Bihar</option>
-            <option>Bengurlu</option>
-            <option>Canada</option>
-            <option>India</option>
-            <option>Island</option>
-            <option>Iran</option>
-            <option>Japan</option>
-            <option>Jharkand</option>
-            <option>Russia</option>
-            <option>Europe</option>
-            <option>England</option>
-            <option>USA</option>
+            <option class="opt">America</option>
+            <option class="opt">Africa</option>
+            <option class="opt">Bihar</option>
+            <option class="opt">Bengurlu</option>
+            <option class="opt">Canada</option>
+            <option class="opt">India</option>
+            <option class="opt">Island</option>
+            <option class="opt">Iran</option>
+            <option class="opt">Japan</option>
+            <option class="opt">Jharkand</option>
+            <option class="opt">Russia</option>
+            <option class="opt">Europe</option>
+            <option class="opt">England</option>
+            <option class="opt">USA</option>
     </select>
         <!-- <button>Search Elements</button> -->
         <input type="text" id="search"/>
@@ -32,9 +32,10 @@
             console.log("Function is running");
            var x=document.getElementById("search").value;
            var element =[];
-           element=document.getElementById("Select").value;
+           element=document.getElementsByClassName('opt');
+           console.log(element);
           for (var i=0; i<element.length;i++){
-            if (element[i]==x){
+            if (element[i]==i){
                 console.log("It is a Working");
             }
 
