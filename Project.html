@@ -22,25 +22,30 @@
             <option>USA</option>
     </select>
         <!-- <button>Search Elements</button> -->
-        <input type="text" placeholder="Search Elements"/>
+        <input type="text" id="search"/>
         <button onclick="myFunction()">Click</button>
-    </body>  
+    </body> 
+</html> 
     <script>
         function myFunction(){
             
             console.log("Function is running");
-            selectElements=document.getElementById("Select");
-            //>selectElement.value;
-            selectElement.options[selectElement.selectedIndex].value
+           var x=document.getElementById("search").value;
+           var element =[];
+           element=document.getElementById("Select").value;
+          for (var i=0; i<element.length;i++){
+            if (element[i]==x){
+                console.log("It is a Working");
+            }
+
         }
-
-       //> var i;
-        // var Elements=["America","Africa","Bihar","Bengurlu","Canada","India","Iran","Japan","Jharkand","Russia","Europe","England","USA"]
-        // for(Elements[i];Elements[i]<length.Elements;Elements[i]++){
-        //         if (i){
-
-        //         }
-        // }
-        
+     }
     </script>
-</html>
+    
+                
+        
+            
+    
+
+
+        
