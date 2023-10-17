@@ -25,7 +25,8 @@
         <input type="text" id="search"/>
         <button onclick="myFunction()">Click</button>
     </body> 
-</html> 
+</html>
+         
     <script>
         function myFunction(){
             
@@ -34,19 +35,16 @@
            var element =[];
            element=document.getElementsByClassName('opt');
            console.log(element);
-          for (var i=0; i<element.length;i++){
-            if (element[i]==i){
-                console.log("It is a Working");
+          for (var i=0; i<=element.length;i++){
+
+            var option=element[i].innerHTML;
+            // element[i]==option[0];
+                if (option.substring(0,x.length)==x){
+                 console.log("It is a Working");
             }
-
+            else{
+                element[i].innerHTML="";
+            }
+            }
         }
-     }
     </script>
-    
-                
-        
-            
-    
-
-
-        
